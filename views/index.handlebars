@@ -1,1 +1,5 @@
-<h1>{{burgers}}</h1>
+{{#each burgers}}
+  <h1>Burger: </h1>
+  <p>{{this.burger_name}}</p>
+  <button type="button" name="button">DELETE</button>
+{{/each}}

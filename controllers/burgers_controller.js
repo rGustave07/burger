@@ -8,3 +8,9 @@ router.get("/", (req,res) => {
         res.render("index", {burgers: data});
     })
 })
+
+router.delete("/", (req, res) => {
+    burger.delete(condition, function(data){
+        res.redirect("/");
+    })
+})
