@@ -1,5 +1,18 @@
 {{#each burgers}}
   <h1>Burger: </h1>
   <p>{{this.burger_name}}</p>
-  <button type="button" name="button">DELETE</button>
+
+  <form action="/{{this.id}}?_method=DELETE" method="POST">
+  <button type="submit">DELETE</button>
+  </form>
 {{/each}}
+
+<h2>Add One!</h2>
+<form class="create-update-form" action="/" method="post">
+
+  <div class="form-group">
+    <input type="text" name="burger_name">
+    <button type="submit">Add</button>
+  </div>
+
+</form>
