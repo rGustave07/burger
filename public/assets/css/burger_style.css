@@ -1,4 +1,8 @@
-#leftColumn{
+#leftColumn {
   position: relative;
   left: 200px;
+}
+
+h1{
+  font-size: 10pt;
 }
