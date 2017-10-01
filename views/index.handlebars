@@ -1,11 +1,14 @@
-{{#each burgers}}
+
+<div id="leftColumn">
+  {{#each burgers}}
   <h1>Burger: </h1>
   <p>{{this.burger_name}}</p>
 
   <form action="/{{this.id}}?_method=DELETE" method="POST">
-  <button type="submit">DELETE</button>
+    <button type="submit">DELETE</button>
   </form>
-{{/each}}
+  {{/each}}
+</div>
 
 <h2>Add One!</h2>
 <form class="create-update-form" action="/" method="post">
